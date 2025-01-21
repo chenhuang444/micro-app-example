@@ -37,7 +37,7 @@ function App() {
           border: "2px solid red",
           boxSizing: "border-box",
         }}
-        iframe
+        // iframe
         url='http://localhost:3001/'
       ></micro-app>
     </div>
