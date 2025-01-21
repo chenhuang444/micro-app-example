@@ -15,8 +15,8 @@ importers:
   apps/host-app:
     dependencies:
       '@micro-zoe/micro-app':
-        specifier: 1.0.0-rc.15
-        version: 1.0.0-rc.15
+        specifier: 1.0.0-rc.19
+        version: 1.0.0-rc.19
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -67,44 +67,66 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@eslint/js':
-        specifier: ^9.13.0
-        version: 9.15.0
+      '@biomejs/biome':
+        specifier: ^1.9.3
+        version: 1.9.4
+      '@rsbuild/core':
+        specifier: ^1.1.8
+        version: 1.1.14
+      '@rsbuild/plugin-react':
+        specifier: ^1.0.7
+        version: 1.1.0(@rsbuild/core@1.1.14)
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
       '@types/react-dom':
         specifier: ^18.3.1
         version: 18.3.1
-      '@vitejs/plugin-react-swc':
-        specifier: ^3.5.0
-        version: 3.7.1(@swc/helpers@0.5.15)(vite@5.4.11(@types/node@22.10.0)(less@4.2.1)(lightningcss@1.28.2)(sass-embedded@1.81.0)(sass@1.81.0)(stylus@0.64.0)(sugarss@5.0.0(postcss@8.4.49))(terser@5.36.0))
-      eslint:
-        specifier: ^9.13.0
-        version: 9.15.0(jiti@2.4.0)
-      eslint-plugin-react-hooks:
-        specifier: ^5.0.0
-        version: 5.0.0(eslint@9.15.0(jiti@2.4.0))
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.14
-        version: 0.4.14(eslint@9.15.0(jiti@2.4.0))
-      globals:
-        specifier: ^15.11.0
-        version: 15.12.0
       typescript:
-        specifier: ~5.6.2
-        version: 5.6.3
-      typescript-eslint:
-        specifier: ^8.11.0
-        version: 8.16.0(eslint@9.15.0(jiti@2.4.0))(typescript@5.6.3)
-      vite:
-        specifier: ^5.4.10
-        version: 5.4.11(@types/node@22.10.0)(less@4.2.1)(lightningcss@1.28.2)(sass-embedded@1.81.0)(sass@1.81.0)(stylus@0.64.0)(sugarss@5.0.0(postcss@8.4.49))(terser@5.36.0)
+        specifier: ^5.7.2
+        version: 5.7.3
 
 packages:
 
   '@adobe/css-tools@4.3.3':
     resolution: {integrity: sha1-kHSb3ouJzUF2QiT1qsKc1BOPdf8=, tarball: http://npm.zhenguanyu.com/@adobe/css-tools/download/@adobe/css-tools-4.3.3.tgz}
+
+  '@biomejs/biome@1.9.4':
+    resolution: {integrity: sha1-iXZigcvDoKroZaf/E9aq/+ooQr8=, tarball: http://npm.zhenguanyu.com/@biomejs/biome/download/@biomejs/biome-1.9.4.tgz}
+    engines: {node: '>=14.21.3'}
+    hasBin: true
+
+  '@biomejs/cli-darwin-arm64@1.9.4':
+    resolution: {integrity: sha1-36N20jpUotjxcTPJLyPBvy5iUJ8=, tarball: http://npm.zhenguanyu.com/@biomejs/cli-darwin-arm64/download/@biomejs/cli-darwin-arm64-1.9.4.tgz}
+    engines: {node: '>=14.21.3'}
+
+  '@biomejs/cli-darwin-x64@1.9.4':
+    resolution: {integrity: sha1-6vws44SdOF/AIjiq0cpKczlaZNk=, tarball: http://npm.zhenguanyu.com/@biomejs/cli-darwin-x64/download/@biomejs/cli-darwin-x64-1.9.4.tgz}
+    engines: {node: '>=14.21.3'}
+
+  '@biomejs/cli-linux-arm64-musl@1.9.4':
+    resolution: {integrity: sha1-14DD4BdY/JDzJoNX4/GRY9H4T8o=, tarball: http://npm.zhenguanyu.com/@biomejs/cli-linux-arm64-musl/download/@biomejs/cli-linux-arm64-musl-1.9.4.tgz}
+    engines: {node: '>=14.21.3'}
+
+  '@biomejs/cli-linux-arm64@1.9.4':
+    resolution: {integrity: sha1-jtHdDolBmktmpH+VrvuMRq5gQck=, tarball: http://npm.zhenguanyu.com/@biomejs/cli-linux-arm64/download/@biomejs/cli-linux-arm64-1.9.4.tgz}
+    engines: {node: '>=14.21.3'}
+
+  '@biomejs/cli-linux-x64-musl@1.9.4':
+    resolution: {integrity: sha1-82mCuWa9Zxo2Zx4d5EF5Y9fbFfs=, tarball: http://npm.zhenguanyu.com/@biomejs/cli-linux-x64-musl/download/@biomejs/cli-linux-x64-musl-1.9.4.tgz}
+    engines: {node: '>=14.21.3'}
+
+  '@biomejs/cli-linux-x64@1.9.4':
+    resolution: {integrity: sha1-oKf1ZoDHa4A03cFJ2/OYvdOkYug=, tarball: http://npm.zhenguanyu.com/@biomejs/cli-linux-x64/download/@biomejs/cli-linux-x64-1.9.4.tgz}
+    engines: {node: '>=14.21.3'}
+
+  '@biomejs/cli-win32-arm64@1.9.4':
+    resolution: {integrity: sha1-4u9OAITna34m8PyIfF7xJl6lYgA=, tarball: http://npm.zhenguanyu.com/@biomejs/cli-win32-arm64/download/@biomejs/cli-win32-arm64-1.9.4.tgz}
+    engines: {node: '>=14.21.3'}
+
+  '@biomejs/cli-win32-x64@1.9.4':
+    resolution: {integrity: sha1-THr6kOOXAhNZm0CV5i+H5ZcrI0A=, tarball: http://npm.zhenguanyu.com/@biomejs/cli-win32-x64/download/@biomejs/cli-win32-x64-1.9.4.tgz}
+    engines: {node: '>=14.21.3'}
 
   '@bufbuild/protobuf@2.2.2':
     resolution: {integrity: sha1-Gm2JYD+yFdxNQXgFLQWzC4PHVAI=, tarball: http://npm.zhenguanyu.com/@bufbuild/protobuf/download/@bufbuild/protobuf-2.2.2.tgz}
@@ -280,8 +302,20 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha1-FfGQ6YiV8/wjJ27hS8drZ1wuUPA=, tarball: http://npm.zhenguanyu.com/@jridgewell/trace-mapping/download/@jridgewell/trace-mapping-0.3.25.tgz}
 
-  '@micro-zoe/micro-app@1.0.0-rc.15':
-    resolution: {integrity: sha1-XJ5ZpNslxpvEvqKNpqoWhtCj1EM=, tarball: http://npm.zhenguanyu.com/@micro-zoe/micro-app/download/@micro-zoe/micro-app-1.0.0-rc.15.tgz}
+  '@micro-zoe/micro-app@1.0.0-rc.19':
+    resolution: {integrity: sha1-9zjw+Ly8M4YMFp5MfUE16G50q2A=, tarball: http://npm.zhenguanyu.com/@micro-zoe/micro-app/download/@micro-zoe/micro-app-1.0.0-rc.19.tgz}
+
+  '@module-federation/runtime-tools@0.5.1':
+    resolution: {integrity: sha1-Gx+Tg3FZpr8MC6eHMNWJpaj3SqM=, tarball: http://npm.zhenguanyu.com/@module-federation/runtime-tools/download/@module-federation/runtime-tools-0.5.1.tgz}
+
+  '@module-federation/runtime@0.5.1':
+    resolution: {integrity: sha1-tUinXiBolS/2atcXy/c/ySHt1dc=, tarball: http://npm.zhenguanyu.com/@module-federation/runtime/download/@module-federation/runtime-0.5.1.tgz}
+
+  '@module-federation/sdk@0.5.1':
+    resolution: {integrity: sha1-bApAU8I/qE23qufkc2SWxUHecZE=, tarball: http://npm.zhenguanyu.com/@module-federation/sdk/download/@module-federation/sdk-0.5.1.tgz}
+
+  '@module-federation/webpack-bundler-runtime@0.5.1':
+    resolution: {integrity: sha1-72Jq8NV+NWjEdNZtfTeXNm4Jyv0=, tarball: http://npm.zhenguanyu.com/@module-federation/webpack-bundler-runtime/download/@module-federation/webpack-bundler-runtime-0.5.1.tgz}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha1-dhnC6yGyVIP20WdUi0z9WnSIw9U=, tarball: http://npm.zhenguanyu.com/@nodelib/fs.scandir/download/@nodelib/fs.scandir-2.1.5.tgz}
@@ -408,6 +442,67 @@ packages:
 
   '@rollup/rollup-win32-x64-msvc@4.27.4':
     resolution: {integrity: sha1-Z9UWYTyfL+QuLYt44lLQADF52Sw=, tarball: http://npm.zhenguanyu.com/@rollup/rollup-win32-x64-msvc/download/@rollup/rollup-win32-x64-msvc-4.27.4.tgz}
+
+  '@rsbuild/core@1.1.14':
+    resolution: {integrity: sha1-VJNCXlZrzE6kpz55gawkabApOQk=, tarball: http://npm.zhenguanyu.com/@rsbuild/core/download/@rsbuild/core-1.1.14.tgz}
+    engines: {node: '>=16.7.0'}
+    hasBin: true
+
+  '@rsbuild/plugin-react@1.1.0':
+    resolution: {integrity: sha1-VhDnrrv+CX6Y5DDNhcsY8T7zEJc=, tarball: http://npm.zhenguanyu.com/@rsbuild/plugin-react/download/@rsbuild/plugin-react-1.1.0.tgz}
+    peerDependencies:
+      '@rsbuild/core': 1.x
+
+  '@rspack/binding-darwin-arm64@1.1.8':
+    resolution: {integrity: sha1-rtzionFIokVMCpMQMEZ0FcDfBC0=, tarball: http://npm.zhenguanyu.com/@rspack/binding-darwin-arm64/download/@rspack/binding-darwin-arm64-1.1.8.tgz}
+
+  '@rspack/binding-darwin-x64@1.1.8':
+    resolution: {integrity: sha1-QryFeL36ABBUhxhq6PRbP3hyggs=, tarball: http://npm.zhenguanyu.com/@rspack/binding-darwin-x64/download/@rspack/binding-darwin-x64-1.1.8.tgz}
+
+  '@rspack/binding-linux-arm64-gnu@1.1.8':
+    resolution: {integrity: sha1-EBLcz7IGU8l30+rUZmNXk30Gj50=, tarball: http://npm.zhenguanyu.com/@rspack/binding-linux-arm64-gnu/download/@rspack/binding-linux-arm64-gnu-1.1.8.tgz}
+
+  '@rspack/binding-linux-arm64-musl@1.1.8':
+    resolution: {integrity: sha1-/4ocvlMrv5pK6M9zvZSedz8Wqak=, tarball: http://npm.zhenguanyu.com/@rspack/binding-linux-arm64-musl/download/@rspack/binding-linux-arm64-musl-1.1.8.tgz}
+
+  '@rspack/binding-linux-x64-gnu@1.1.8':
+    resolution: {integrity: sha1-veyLon52SpJqfye5DS2mUHVYvGg=, tarball: http://npm.zhenguanyu.com/@rspack/binding-linux-x64-gnu/download/@rspack/binding-linux-x64-gnu-1.1.8.tgz}
+
+  '@rspack/binding-linux-x64-musl@1.1.8':
+    resolution: {integrity: sha1-Orrz5RPtfjSBIlKT0jX0H0qwro0=, tarball: http://npm.zhenguanyu.com/@rspack/binding-linux-x64-musl/download/@rspack/binding-linux-x64-musl-1.1.8.tgz}
+
+  '@rspack/binding-win32-arm64-msvc@1.1.8':
+    resolution: {integrity: sha1-XGP/tyasLV6ofDbaEfMP1Cx2Abw=, tarball: http://npm.zhenguanyu.com/@rspack/binding-win32-arm64-msvc/download/@rspack/binding-win32-arm64-msvc-1.1.8.tgz}
+
+  '@rspack/binding-win32-ia32-msvc@1.1.8':
+    resolution: {integrity: sha1-JdQfQaaMhMdPjNhixTwxELLANPM=, tarball: http://npm.zhenguanyu.com/@rspack/binding-win32-ia32-msvc/download/@rspack/binding-win32-ia32-msvc-1.1.8.tgz}
+
+  '@rspack/binding-win32-x64-msvc@1.1.8':
+    resolution: {integrity: sha1-pYgb7u2xBY7DlVncH0vP6nMeojI=, tarball: http://npm.zhenguanyu.com/@rspack/binding-win32-x64-msvc/download/@rspack/binding-win32-x64-msvc-1.1.8.tgz}
+
+  '@rspack/binding@1.1.8':
+    resolution: {integrity: sha1-T5nyrdgTIQ1Y89gULtmLv2DlEHg=, tarball: http://npm.zhenguanyu.com/@rspack/binding/download/@rspack/binding-1.1.8.tgz}
+
+  '@rspack/core@1.1.8':
+    resolution: {integrity: sha1-RgedtssBuOACj/0qxUx6lnhnTnQ=, tarball: http://npm.zhenguanyu.com/@rspack/core/download/@rspack/core-1.1.8.tgz}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@swc/helpers': '>=0.5.1'
+    peerDependenciesMeta:
+      '@swc/helpers':
+        optional: true
+
+  '@rspack/lite-tapable@1.0.1':
+    resolution: {integrity: sha1-1FQKXSi9YXcWS8C6C+5L3sBFhZE=, tarball: http://npm.zhenguanyu.com/@rspack/lite-tapable/download/@rspack/lite-tapable-1.0.1.tgz}
+    engines: {node: '>=16.0.0'}
+
+  '@rspack/plugin-react-refresh@1.0.1':
+    resolution: {integrity: sha1-xjc5BMIbUb5p+ywwTFni1PPfsFU=, tarball: http://npm.zhenguanyu.com/@rspack/plugin-react-refresh/download/@rspack/plugin-react-refresh-1.0.1.tgz}
+    peerDependencies:
+      react-refresh: '>=0.10.0 <1.0.0'
+    peerDependenciesMeta:
+      react-refresh:
+        optional: true
 
   '@swc/core-darwin-arm64@1.9.3':
     resolution: {integrity: sha1-zKE/fObhCZYSp7oBf0kjhX06TV8=, tarball: http://npm.zhenguanyu.com/@swc/core-darwin-arm64/download/@swc/core-darwin-arm64-1.9.3.tgz}
@@ -607,6 +702,9 @@ packages:
     resolution: {integrity: sha1-s2MKvYlDQy9Us/BRkjjjPNffL3M=, tarball: http://npm.zhenguanyu.com/callsites/download/callsites-3.1.0.tgz}
     engines: {node: '>=6'}
 
+  caniuse-lite@1.0.30001695:
+    resolution: {integrity: sha1-Od/t2PlIURMnlf35t50pZZrZxNQ=, tarball: http://npm.zhenguanyu.com/caniuse-lite/download/caniuse-lite-1.0.30001695.tgz}
+
   chalk@4.1.2:
     resolution: {integrity: sha1-qsTit3NKdAhnrrFr8CqtVWoeegE=, tarball: http://npm.zhenguanyu.com/chalk/download/chalk-4.1.2.tgz}
     engines: {node: '>=10'}
@@ -633,6 +731,9 @@ packages:
 
   copy-anything@2.0.6:
     resolution: {integrity: sha1-CSRU6pWEp7etVXMGKyqH9ZAPxIA=, tarball: http://npm.zhenguanyu.com/copy-anything/download/copy-anything-2.0.6.tgz}
+
+  core-js@3.39.0:
+    resolution: {integrity: sha1-V/dkf00tAwwypy6iOgVVsuqjD4M=, tarball: http://npm.zhenguanyu.com/core-js/download/core-js-3.39.0.tgz}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha1-ilj+ePANzXDDcEUXWd+/rwPo7p8=, tarball: http://npm.zhenguanyu.com/cross-spawn/download/cross-spawn-7.0.6.tgz}
@@ -670,6 +771,9 @@ packages:
   errno@0.1.8:
     resolution: {integrity: sha1-i7Ppx9Rjvkl2/4iPdrSAnrwugR8=, tarball: http://npm.zhenguanyu.com/errno/download/errno-0.1.8.tgz}
     hasBin: true
+
+  error-stack-parser@2.1.4:
+    resolution: {integrity: sha1-IpywHNv6hEQL+pGHYoW5RoAYgoY=, tarball: http://npm.zhenguanyu.com/error-stack-parser/download/error-stack-parser-2.1.4.tgz}
 
   esbuild@0.21.5:
     resolution: {integrity: sha1-nKMBsSCSKVm3ZjYNisgw2g0CmX0=, tarball: http://npm.zhenguanyu.com/esbuild/download/esbuild-0.21.5.tgz}
@@ -805,6 +909,9 @@ packages:
   has-flag@4.0.0:
     resolution: {integrity: sha1-lEdx/ZyByBJlxNaUGGDaBrtZR5s=, tarball: http://npm.zhenguanyu.com/has-flag/download/has-flag-4.0.0.tgz}
     engines: {node: '>=8'}
+
+  html-entities@2.5.2:
+    resolution: {integrity: sha1-IBo8+V06Fb5wmVIWINGd+09lNZ8=, tarball: http://npm.zhenguanyu.com/html-entities/download/html-entities-2.5.2.tgz}
 
   iconv-lite@0.6.3:
     resolution: {integrity: sha1-pS+AvzjaGVLrXGgXkHGYcaGnJQE=, tarball: http://npm.zhenguanyu.com/iconv-lite/download/iconv-lite-0.6.3.tgz}
@@ -1061,6 +1168,10 @@ packages:
     peerDependencies:
       react: ^18.3.1
 
+  react-refresh@0.16.0:
+    resolution: {integrity: sha1-59RWJfBclwlGbQk0iiXSL3myrSM=, tarball: http://npm.zhenguanyu.com/react-refresh/download/react-refresh-0.16.0.tgz}
+    engines: {node: '>=0.10.0'}
+
   react@18.3.1:
     resolution: {integrity: sha1-SauJIAnFOTNiW9FrJTP8dUyrKJE=, tarball: http://npm.zhenguanyu.com/react/download/react-18.3.1.tgz}
     engines: {node: '>=0.10.0'}
@@ -1227,6 +1338,9 @@ packages:
     resolution: {integrity: sha1-qbvnBcnYhG9OCP9nZazw8bCJhlY=, tarball: http://npm.zhenguanyu.com/source-map/download/source-map-0.7.4.tgz}
     engines: {node: '>= 8'}
 
+  stackframe@1.3.4:
+    resolution: {integrity: sha1-uIGgBMjBSaXo7+831RsW5BKUMxA=, tarball: http://npm.zhenguanyu.com/stackframe/download/stackframe-1.3.4.tgz}
+
   string-width@4.2.3:
     resolution: {integrity: sha1-JpxxF9J7Ba0uU2gwqOyJXvnG0BA=, tarball: http://npm.zhenguanyu.com/string-width/download/string-width-4.2.3.tgz}
     engines: {node: '>=8'}
@@ -1311,6 +1425,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  typescript@5.7.3:
+    resolution: {integrity: sha1-kZtEp9u4WDqbhW0WK+JKVL+ABz4=, tarball: http://npm.zhenguanyu.com/typescript/download/typescript-5.7.3.tgz}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   undici-types@6.20.0:
     resolution: {integrity: sha1-gXG/IsH1iNFVTVW/IEvGJK84hDM=, tarball: http://npm.zhenguanyu.com/undici-types/download/undici-types-6.20.0.tgz}
 
@@ -1375,6 +1494,41 @@ packages:
 snapshots:
 
   '@adobe/css-tools@4.3.3':
+    optional: true
+
+  '@biomejs/biome@1.9.4':
+    optionalDependencies:
+      '@biomejs/cli-darwin-arm64': 1.9.4
+      '@biomejs/cli-darwin-x64': 1.9.4
+      '@biomejs/cli-linux-arm64': 1.9.4
+      '@biomejs/cli-linux-arm64-musl': 1.9.4
+      '@biomejs/cli-linux-x64': 1.9.4
+      '@biomejs/cli-linux-x64-musl': 1.9.4
+      '@biomejs/cli-win32-arm64': 1.9.4
+      '@biomejs/cli-win32-x64': 1.9.4
+
+  '@biomejs/cli-darwin-arm64@1.9.4':
+    optional: true
+
+  '@biomejs/cli-darwin-x64@1.9.4':
+    optional: true
+
+  '@biomejs/cli-linux-arm64-musl@1.9.4':
+    optional: true
+
+  '@biomejs/cli-linux-arm64@1.9.4':
+    optional: true
+
+  '@biomejs/cli-linux-x64-musl@1.9.4':
+    optional: true
+
+  '@biomejs/cli-linux-x64@1.9.4':
+    optional: true
+
+  '@biomejs/cli-win32-arm64@1.9.4':
+    optional: true
+
+  '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
   '@bufbuild/protobuf@2.2.2':
@@ -1538,7 +1692,23 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.0
     optional: true
 
-  '@micro-zoe/micro-app@1.0.0-rc.15': {}
+  '@micro-zoe/micro-app@1.0.0-rc.19': {}
+
+  '@module-federation/runtime-tools@0.5.1':
+    dependencies:
+      '@module-federation/runtime': 0.5.1
+      '@module-federation/webpack-bundler-runtime': 0.5.1
+
+  '@module-federation/runtime@0.5.1':
+    dependencies:
+      '@module-federation/sdk': 0.5.1
+
+  '@module-federation/sdk@0.5.1': {}
+
+  '@module-federation/webpack-bundler-runtime@0.5.1':
+    dependencies:
+      '@module-federation/runtime': 0.5.1
+      '@module-federation/sdk': 0.5.1
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -1670,6 +1840,76 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.27.4':
     optional: true
 
+  '@rsbuild/core@1.1.14':
+    dependencies:
+      '@rspack/core': 1.1.8(@swc/helpers@0.5.15)
+      '@rspack/lite-tapable': 1.0.1
+      '@swc/helpers': 0.5.15
+      core-js: 3.39.0
+
+  '@rsbuild/plugin-react@1.1.0(@rsbuild/core@1.1.14)':
+    dependencies:
+      '@rsbuild/core': 1.1.14
+      '@rspack/plugin-react-refresh': 1.0.1(react-refresh@0.16.0)
+      react-refresh: 0.16.0
+
+  '@rspack/binding-darwin-arm64@1.1.8':
+    optional: true
+
+  '@rspack/binding-darwin-x64@1.1.8':
+    optional: true
+
+  '@rspack/binding-linux-arm64-gnu@1.1.8':
+    optional: true
+
+  '@rspack/binding-linux-arm64-musl@1.1.8':
+    optional: true
+
+  '@rspack/binding-linux-x64-gnu@1.1.8':
+    optional: true
+
+  '@rspack/binding-linux-x64-musl@1.1.8':
+    optional: true
+
+  '@rspack/binding-win32-arm64-msvc@1.1.8':
+    optional: true
+
+  '@rspack/binding-win32-ia32-msvc@1.1.8':
+    optional: true
+
+  '@rspack/binding-win32-x64-msvc@1.1.8':
+    optional: true
+
+  '@rspack/binding@1.1.8':
+    optionalDependencies:
+      '@rspack/binding-darwin-arm64': 1.1.8
+      '@rspack/binding-darwin-x64': 1.1.8
+      '@rspack/binding-linux-arm64-gnu': 1.1.8
+      '@rspack/binding-linux-arm64-musl': 1.1.8
+      '@rspack/binding-linux-x64-gnu': 1.1.8
+      '@rspack/binding-linux-x64-musl': 1.1.8
+      '@rspack/binding-win32-arm64-msvc': 1.1.8
+      '@rspack/binding-win32-ia32-msvc': 1.1.8
+      '@rspack/binding-win32-x64-msvc': 1.1.8
+
+  '@rspack/core@1.1.8(@swc/helpers@0.5.15)':
+    dependencies:
+      '@module-federation/runtime-tools': 0.5.1
+      '@rspack/binding': 1.1.8
+      '@rspack/lite-tapable': 1.0.1
+      caniuse-lite: 1.0.30001695
+    optionalDependencies:
+      '@swc/helpers': 0.5.15
+
+  '@rspack/lite-tapable@1.0.1': {}
+
+  '@rspack/plugin-react-refresh@1.0.1(react-refresh@0.16.0)':
+    dependencies:
+      error-stack-parser: 2.1.4
+      html-entities: 2.5.2
+    optionalDependencies:
+      react-refresh: 0.16.0
+
   '@swc/core-darwin-arm64@1.9.3':
     optional: true
 
@@ -1722,7 +1962,6 @@ snapshots:
   '@swc/helpers@0.5.15':
     dependencies:
       tslib: 2.8.1
-    optional: true
 
   '@swc/types@0.1.17':
     dependencies:
@@ -1885,6 +2124,8 @@ snapshots:
 
   callsites@3.1.0: {}
 
+  caniuse-lite@1.0.30001695: {}
+
   chalk@4.1.2:
     dependencies:
       ansi-styles: 4.3.0
@@ -1914,6 +2155,8 @@ snapshots:
       is-what: 3.14.1
     optional: true
 
+  core-js@3.39.0: {}
+
   cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
@@ -1941,6 +2184,10 @@ snapshots:
     dependencies:
       prr: 1.0.1
     optional: true
+
+  error-stack-parser@2.1.4:
+    dependencies:
+      stackframe: 1.3.4
 
   esbuild@0.21.5:
     optionalDependencies:
@@ -2119,6 +2366,8 @@ snapshots:
   graphemer@1.4.0: {}
 
   has-flag@4.0.0: {}
+
+  html-entities@2.5.2: {}
 
   iconv-lite@0.6.3:
     dependencies:
@@ -2362,6 +2611,8 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
+  react-refresh@0.16.0: {}
+
   react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
@@ -2549,6 +2800,8 @@ snapshots:
   source-map@0.7.4:
     optional: true
 
+  stackframe@1.3.4: {}
+
   string-width@4.2.3:
     dependencies:
       emoji-regex: 8.0.0
@@ -2620,8 +2873,7 @@ snapshots:
     dependencies:
       typescript: 5.6.3
 
-  tslib@2.8.1:
-    optional: true
+  tslib@2.8.1: {}
 
   type-check@0.4.0:
     dependencies:
@@ -2639,6 +2891,8 @@ snapshots:
       - supports-color
 
   typescript@5.6.3: {}
+
+  typescript@5.7.3: {}
 
   undici-types@6.20.0:
     optional: true
