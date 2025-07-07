@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "wait-on file:../micro-app/dist/index.html && vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "@micro-zoe/micro-app": "1.0.0-rc.19"
+    "@micro-zoe/micro-app": "1.0.0-rc.26"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
@@ -25,6 +25,8 @@
     "globals": "^15.11.0",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.11.0",
+    "wait-on": "8.0.3",
+    "@types/node": "20.17.8",
     "vite": "^5.4.10"
   }
 }

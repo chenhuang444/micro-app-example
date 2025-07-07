@@ -1,11 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { MicroApp } from '@micro-zoe/micro-app'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const fileProtocolPath = `file://${MICROAPP_PATH}/dist/index.html`
 
   return (
     <div
@@ -19,16 +15,23 @@ function App() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "start",
+        wordBreak: "break-all",
       }}
     >
       <div
         style={{
           fontSize: "42px",
           width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
         }}
       >
-        Host Header
+        <div>Host Header</div>
+        <div>{fileProtocolPath}</div>
       </div>
+      {/* @ts-expect-error - micro-app is a valid tag after initialization */}
       <micro-app
         name="my-test-app"
         style={{
@@ -38,7 +41,8 @@ function App() {
           boxSizing: "border-box",
         }}
         // iframe
-        url='http://localhost:3001/'
+        url={fileProtocolPath}
+        // @ts-expect-error - micro-app is a valid tag after initialization
       ></micro-app>
     </div>
   );

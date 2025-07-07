@@ -1,2 +1,8 @@
 packages:
   - 'apps/*'
+onlyBuiltDependencies:
+  - electron
+  - '@biomejs/biome'
+  - '@swc/core'
+  - 'core-js'
+  - 'esbuild'

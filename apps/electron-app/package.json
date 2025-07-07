@@ -1,0 +1,16 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "Hello World!",
+  "main": "main.js",
+  "scripts": {
+    "dev": "wait-on http://localhost:3000 && electron .",
+    "start": "electron ."
+  },
+  "author": "Chen Huang",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "26.6.10",
+    "wait-on": "8.0.3"
+  }
+}
