@@ -1,11 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { MicroApp } from '@micro-zoe/micro-app'
+import { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [show, setShow] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(false)
+    }, 5000)
+    return () => {
+      clearTimeout(timeout)
+    }
+  }, [])
 
   return (
     <div
@@ -28,20 +34,37 @@ function App() {
         }}
       >
         Host Header
+        <div
+          onClick={() => setShow(!show)}
+          style={{
+            color: "blue",
+            cursor: "pointer",
+            backgroundColor: "lightgray",
+            padding: "10px",
+            borderRadius: "5px",
+            position: "absolute",
+            right: "10px",
+            top: "10px",
+          }}
+        >
+          Toggle Render
+        </div>
       </div>
-      <micro-app
-        name="my-test-app"
-        style={{
-          width: "100%",
-          flex: 1,
-          border: "2px solid red",
-          boxSizing: "border-box",
-        }}
-        iframe
-        url='http://localhost:3001/'
-      ></micro-app>
+      {show && (
+        <micro-app
+          name="my-test-app"
+          style={{
+            width: "100%",
+            flex: 1,
+            border: "2px solid red",
+            boxSizing: "border-box",
+          }}
+          iframe
+          url="http://localhost:3001/"
+        ></micro-app>
+      )}
     </div>
   );
 }
 
-export default App
+export default App;

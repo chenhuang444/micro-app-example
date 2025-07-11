@@ -7,6 +7,7 @@ import App from "./App.tsx";
 let root: Root | undefined;
 
 (window as any).mount = () => {
+  console.log('xxx mount')
   root = createRoot(document.getElementById("root")!);
   root.render(
     <StrictMode>
@@ -16,6 +17,7 @@ let root: Root | undefined;
 };
 
 (window as any).unmount = () => {
+  console.log('xxx unmount')
   if (root) {
     root.unmount();
     root = undefined;
