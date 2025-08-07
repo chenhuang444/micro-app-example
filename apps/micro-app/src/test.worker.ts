@@ -1,0 +1,1 @@
+console.log('xxx hello world! this is a test web worker!');
