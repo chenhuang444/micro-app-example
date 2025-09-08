@@ -1,12 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { MicroApp } from '@micro-zoe/micro-app'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <div
       style={{
@@ -29,17 +24,9 @@ function App() {
       >
         Host Header
       </div>
-      <micro-app
-        name="my-test-app"
-        style={{
-          width: "100%",
-          flex: 1,
-          border: "2px solid red",
-          boxSizing: "border-box",
-        }}
-        iframe={false}
-        url='http://localhost:3001/'
-      ></micro-app>
+      <div>
+        Hello World
+      </div>
     </div>
   );
 }

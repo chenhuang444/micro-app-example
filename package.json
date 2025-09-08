@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "dev": "pnpm --filter \"./apps/*\" run dev"
+    "dev": "pnpm --filter \"./apps/host-app\" run dev",
+    "preview": "pnpm --filter \"./apps/host-app\" run preview",
+    "build": "pnpm --filter \"./apps/host-app\" run build",
+    "demo": "pnpm build && pnpm preview"
   },
   "keywords": [],
   "author": "",
